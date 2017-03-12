@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<res:schema xmlns:res="http://www.w3.org/2001/XMLSchema" xmlns:rs="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.mediaanservice.org/response">
+
+	<res:element name="result">
+		<res:complexType>
+			<res:sequence>
+				<res:element name="mediaan" type="res:decimal" />
+			</res:sequence>
+		</res:complexType>
+</res:element>
+
+</res:schema>

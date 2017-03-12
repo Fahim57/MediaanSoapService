@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<req:schema	targetNamespace="http://www.mediaanservice.org/request"
+			xmlns:req="http://www.w3.org/2001/XMLSchema">
+
+	<req:annotation>
+		<req:documentation>Node in de hiërarchische catergory structuur en bevat de lijst van nummers
+		</req:documentation>
+	</req:annotation>
+	<req:element name="nummers">
+		<req:complexType>			
+			<req:sequence>
+				<req:element name="nummer" minOccurs="1" maxOccurs="unbounded">
+					<req:simpleType>
+						<req:restriction base="req:integer" value="1">
+							<req:sequence>
+								<req:any minOccurs="0" />
+							</req:sequence>
+					    </req:restriction>
+					</req:simpleType>					
+				</req:element>
+			</req:sequence>
+		
+		</req:complexType>
+	</req:element>
+</req:schema>
